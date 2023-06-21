@@ -2,6 +2,7 @@ import { useRouter } from 'next/router'
 import type { DocsThemeConfig } from 'nextra-theme-docs'
 import { useConfig } from 'nextra-theme-docs'
 
+
 const logo = (
   <h1>
    
@@ -28,16 +29,21 @@ const logo = (
   </h1>
 )
 
-const config: DocsThemeConfig = {
 
+const config: DocsThemeConfig = {
+  useNextSeoProps() {
+    return {
+      titleTemplate: '%s – bookonlinenow'
+    }
+  },
   logo,
   head: function useHead() {
     const { title } = useConfig()
     const { route } = useRouter()
     const socialCard =
       route === '/' || !title
-        ? ''
-        : ``
+        ? 'bookonlinenow'
+        : `bookonlinenow`
 
     return (
       <>
@@ -105,4 +111,4 @@ const config: DocsThemeConfig = {
   }
 }
 
-export default config
+export default config 
