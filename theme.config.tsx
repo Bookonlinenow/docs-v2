@@ -31,6 +31,7 @@ const logo = (
 
 
 const config: DocsThemeConfig = {
+  
   useNextSeoProps() {
     return {
       titleTemplate: '%s – bookonlinenow'
@@ -91,8 +92,7 @@ const config: DocsThemeConfig = {
     text: ''
   },
   feedback: {
-    content: 'Question? Give us feedback →',
-    labels: 'feedback'
+    content: '',
   },
   sidebar: {
     titleComponent({ title, type }) {
