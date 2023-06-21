@@ -1,15 +1,19 @@
 {
   "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
-  "about": {
-    "title": "About",
-    "type": "page"
+  "-- Themes": {
+    "type": "separator",
+    "title": "BON API V2.0"
   },
-  "contact": {
-    "title": "Contact ↗",
-    "type": "page",
-    "href": "https://twitter.com/shuding_",
+  "General": "About the API",
+  "Property": "",
+
+  "-- More": {
+    "type": "separator",
+    "title": "More"
+  },
+  "Integration Docs": {
+    "title": "Integration Docs ↗",
+    "href": "",
     "newWindow": true
   }
 }
