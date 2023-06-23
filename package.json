@@ -1,13 +1,13 @@
 {
-  "name": "nextra-docs-template",
+  "name": "bon-api-docs",
   "version": "0.0.1",
-  "description": "Nextra docs template",
+  "description": "bon-api-docs",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
-  "author": "Shu Ding <g@shud.in>",
+  "author": "Ioannis Psomadelis ",
   "license": "MIT",
   "dependencies": {
     "next": "^13.0.6",
