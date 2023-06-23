@@ -6,6 +6,9 @@
   },
   "General": "About the API",
   "Property": "",
+  "Availability": "",
+  "Bookings": "",
+  "Error": "",
 
   "-- More": {
     "type": "separator",
