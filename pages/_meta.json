@@ -1,9 +1,6 @@
 {
   "index": "Introduction",
-  "-- Themes": {
-    "type": "separator",
-    "title": "BON API V2.0"
-  },
+
   "General": "About the API",
   "Property": "",
   "Availability": "",
