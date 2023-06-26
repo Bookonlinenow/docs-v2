@@ -2,6 +2,7 @@ import { useRouter } from 'next/router'
 import type { DocsThemeConfig } from 'nextra-theme-docs'
 import { useConfig } from 'nextra-theme-docs'
 import { Analytics } from '@vercel/analytics/react';
+import type { AppProps } from 'next/app';
 
 
 const logo = (
@@ -29,19 +30,12 @@ const logo = (
     BON API DOCS
   </h1>
 )
- 
- function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <html lang="en">
-      <body>
-        {children}
-        <Analytics />
-      </body>
-    </html>
+    <>
+      <Component {...pageProps} />
+      <Analytics />
+    </>
   );
 }
 
