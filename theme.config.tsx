@@ -2,7 +2,6 @@ import { useRouter } from 'next/router'
 import type { DocsThemeConfig } from 'nextra-theme-docs'
 import { useConfig } from 'nextra-theme-docs'
 import { Analytics } from '@vercel/analytics/react';
-import type { AppProps } from 'next/app';
 
 
 const logo = (
@@ -30,14 +29,7 @@ const logo = (
     BON API DOCS
   </h1>
 )
-function MyApp({ Component, pageProps }: AppProps) {
-  return (
-    <>
-      <Component {...pageProps} />
-      <Analytics />
-    </>
-  );
-}
+
 
 const config: DocsThemeConfig = {
   
@@ -93,6 +85,7 @@ const config: DocsThemeConfig = {
           type="image/png"
           media="(prefers-color-scheme: dark)"
         />
+        <Analytics />
       </>
     )
   },
