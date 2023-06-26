@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router'
 import type { DocsThemeConfig } from 'nextra-theme-docs'
 import { useConfig } from 'nextra-theme-docs'
+import { Analytics } from '@vercel/analytics/react';
 
 
 const logo = (
@@ -28,7 +29,24 @@ const logo = (
     BON API DOCS
   </h1>
 )
-
+ 
+ function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <head>
+        <title>Next.js</title>
+      </head>
+      <body>
+        {children}
+        <Analytics />
+      </body>
+    </html>
+  );
+}
 
 const config: DocsThemeConfig = {
   
