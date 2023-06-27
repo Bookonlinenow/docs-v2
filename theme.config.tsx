@@ -1,7 +1,6 @@
 import { useRouter } from 'next/router'
 import type { DocsThemeConfig } from 'nextra-theme-docs'
 import { useConfig } from 'nextra-theme-docs'
-import { Analytics } from '@vercel/analytics/react';
 
 
 const logo = (
@@ -85,7 +84,6 @@ const config: DocsThemeConfig = {
           type="image/png"
           media="(prefers-color-scheme: dark)"
         />
-        <Analytics />
       </>
     )
   },
